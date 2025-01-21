@@ -4,7 +4,7 @@ import ProfileCard from "../components/ProfileCard";
 import { Profile } from "../types";
 import { Loader2 } from "lucide-react";
 
-const Home: React.FC = () => {
+const Admin: React.FC = () => {
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -47,11 +47,11 @@ const Home: React.FC = () => {
       <h1 className="text-2xl font-bold mb-4">Profiles</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {profiles.map((profile) => (
-          <ProfileCard key={profile.id} profile={profile} />
+          <ProfileCard key={profile.id} profile={profile} isAdmin={true} />
         ))}
       </div>
     </main>
   );
 };
 
-export default Home;
+export default Admin;

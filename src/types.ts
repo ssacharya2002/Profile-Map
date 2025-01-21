@@ -6,10 +6,8 @@ export interface Profile {
   address: string;
   longitude: number;
   latitude: number;
-  contact: {
-    email: string;
-    phone: string;
-  };
+  email: string;
+  phone: string;
   interests: string[];
 }
 

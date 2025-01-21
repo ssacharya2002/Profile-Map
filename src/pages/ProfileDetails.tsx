@@ -67,14 +67,14 @@ export default function ProfileDetails() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="text-gray-500" />
-                <a href={`mailto:${profile.contact.email}`} className="text-blue-500 hover:underline">
-                  {profile.contact.email}
+                <a href={`mailto:${profile.email}`} className="text-blue-500 hover:underline">
+                  {profile.email}
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="text-gray-500" />
-                <a href={`tel:${profile.contact.phone}`} className="text-blue-500 hover:underline">
-                  {profile.contact.phone}
+                <a href={`tel:${profile.phone}`} className="text-blue-500 hover:underline">
+                  {profile.phone}
                 </a>
               </div>
             </div>
