@@ -21,14 +21,7 @@ model Profile {
   address     String
   latitude    Float
   longitude   Float
-  contact     Contact  @relation(fields: [contactId], references: [id])
-  contactId   String
+  email       String
+  phone       String
   interests   String[]
-}
-
-model Contact {
-  id       String    @id @default(uuid())
-  email    String    @unique
-  phone    String
-  profiles Profile[]
 }
